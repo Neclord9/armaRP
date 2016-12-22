@@ -4,13 +4,23 @@ html, body, .wrapper {
 }
 
 body {
-  background: #28B2CB url(http://saltlord.tech/image/allsee.jpg);
-  background-repeat: repeat;
+  background: url(http://saltlord.tech/image/allsee.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
   font-family: 'Oswald', sans-serif;
+}
+
+canvas {
+  bottom: 1px;
+  right: 1px;
+  position: absolute;
+  cursor: move;
 }
 
 .wrapper {

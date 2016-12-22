@@ -1,12 +1,12 @@
 document.ready(function(){
   var c = document.getElementById('canv');
   var $ = c.getContext('2d');
-  c.width = 1200; c.height = 900; 
+  c.width = 700; c.height = 500; 
   var ms = false;
   var w = 0, h = 0;
   
   var img = new Image();
-  img.src = 'https://i.imgur.com/uSijpOc.png';
+  img.src = 'http://saltlord.tech/image/astrosloth.png';
   
   var set = function(){
     var run, _h, _w, dx, a;
@@ -15,7 +15,7 @@ document.ready(function(){
     $.translate(50, 50);
     a = 30;
     dx = 0;
-    _w = w + 50;
+    _w = w + 10;
     _h = h + 50;
     return (run = function() {
       var inc, i, j;

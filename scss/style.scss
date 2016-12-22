@@ -4,9 +4,19 @@
 
 html, body, .wrapper { height: 100%; }
 body {
-  background: #28B2CB url(https://s-media-cache-ak0.pinimg.com/originals/73/62/8a/73628a6435fda761f841f86f53844876.jpg);background-repeat:repeat;
+    background: url(http://saltlord.tech/image/allsee.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   @include background-size(cover);
   font-family: 'Oswald', sans-serif;
+}
+canvas{
+  bottom: 1px;
+    right: 1px;
+    position: absolute;
+  cursor:move;
 }
 .wrapper {
   background-image: url();
@@ -81,4 +91,4 @@ a.animBtn {
     @include transform(translateX(-50%) translateY(-50%));
   }
   &.themeD:hover:after { height: 450%; width: 110%; opacity: 1; }
-}
+  }
