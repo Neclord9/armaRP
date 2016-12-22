@@ -1,3 +1,3 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/Neclord/pen/pNBgWB.
+A Pen created at CodePen.io. You can find this one at http://codepen.io/Neclord/pen/oYOzXb.
 
- Button rotates in 3D when hovered and uses SVGs for dynamic text masking.  💅
+ Which one do you like? :D

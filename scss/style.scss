@@ -1,67 +1,85 @@
-html,
-body {
-     height: 100%;
-     overflow: hidden;
-}
+@import "compass/css3";
 
-body {
-     color: #6699CC;
-     font-size: 22px;
-     font-weight: bold;
-     text-align: center;
-     -webkit-font-smoothing: antialiased;
-     
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     
-     background-color: #C594C5;
-     background-size: cover;
-     background-position: center;
-     background-image: linear-gradient(rgba(grey, 0.8), rgba(black, 5.8)),
-                       url('http://wallpapercave.com/wp/6x6hXdt.jpg');
-}
+@import url(//fonts.googleapis.com/css?family=Oswald:300);
 
-.fancy-button {
-     position: relative;
-     display: block;
-     cursor: pointer;
-     perspective: 1800px;
-     .fancy-flipper {
-          position: absolute;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          transform-style: preserve-3d;
-          transform: rotateX(-90deg);
-          transition: transform 0.3s ease;
-     }
-     .fancy-front,
-     .fancy-back {
-          position: absolute;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          backface-visibility: hidden;
-          svg {
-               display: block;
-          }
-     }
-     &:hover {
-          .fancy-flipper {
-               transform: rotateX(0deg);
-          }
-     }
-     &:active {
-          .fancy-flipper {
-               transform: rotateX(0deg) scale(0.95);
-               transition: transform 0.05s ease;
-          }
-     }
-     .button-text {
-          letter-spacing: 0.01em;
-          font-family: Futura, "Helvetica Neue", Helvetica, sans-serif;
-     }
+html, body, .wrapper { height: 100%; }
+body {
+  background-image: linear-gradient(rgba(128, 128, 128, 0.8), black), url("http://wallpapercave.com/wp/6x6hXdt.jpg");
+  background: #28B2CB url(http://wallpapercave.com/wp/6x6hXdt.jpg) center center no-repeat;
+  @include background-size(cover);
+  font-family: 'Oswald', sans-serif;
+}
+.wrapper {
+  background-image: url(https://db.tt/xO15SiJ0);
+  width: 100%;
+}
+.holder {
+  position: absolute;
+  top: 50%;
+  height: 300px;
+  width: 100%;
+  margin-top: -170px;
+}
+a.animBtn:link, a.animBtn:visited {
+    position: relative;
+    display: block;
+    width: 180px;
+    margin: 30px auto 0;
+    padding: 14px 15px;
+    border: 2px solid #000000;
+    background: rgba(255,255,255,0.2);
+    color: #4d4d4d;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    text-shadow: 0 0 1px rgba(0,0,0,0.2), 0 1px 0 rgba(0,0,0,0.2);
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+         -o-transition: all .3s ease;
+            transition: all .3s ease;
+    &:after {
+      content: "";
+      position: absolute;
+      background: none repeat scroll 0 0 #e60000;
+      height: 0%;
+      left: 50%;
+      top: 50%;
+      width: 100%;
+      z-index:-1;
+      -webkit-transition: all .3s ease 0s;
+         -moz-transition: all .3s ease 0s;
+           -o-transition: all .3s ease 0s;
+              transition: all .3s ease 0s;
+    }
+    &:hover {
+      color: #333;
+      text-shadow: none;
+      &:after {
+        height: 420%;
+      }
+    }
+}
+a.animBtn {
+  &.themeA:after {
+    @include transform(translateX(-50%) translateY(-50%) rotate(-45deg));
+  }
+  &.themeB:after {
+    @include transform(translateX(-50%) translateY(-50%) rotate(45deg));
+  }
+  &.themeC:after {
+    opacity: .5;
+    @include transform(translateX(-50%) translateY(-50%));
+  }
+  &.themeC:hover:after {
+    height: 140%; opacity: 1;
+  }
+  &.themeD:after {
+    width: 0%;
+    border-radius: 50%;
+    opacity: .5;
+    @include transform(translateX(-50%) translateY(-50%));
+  }
+  &.themeD:hover:after { height: 450%; width: 110%; opacity: 1; }
 }
