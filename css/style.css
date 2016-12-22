@@ -4,8 +4,8 @@ html, body, .wrapper {
 }
 
 body {
-  background-image: linear-gradient(rgba(128, 128, 128, 0.8), #000000), url("http://saltlord.tech/image/6x6hXdt.jpg");
-  background: #28B2CB url(http://saltlord.tech/image/6x6hXdt.jpg) center center no-repeat;
+  background: #28B2CB url(https://s-media-cache-ak0.pinimg.com/originals/73/62/8a/73628a6435fda761f841f86f53844876.jpg);
+  background-repeat: repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -14,7 +14,7 @@ body {
 }
 
 .wrapper {
-  background-image: url(https://db.tt/xO15SiJ0);
+  background-image: url();
   width: 100%;
 }
 
