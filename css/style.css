@@ -4,8 +4,8 @@ html, body, .wrapper {
 }
 
 body {
-  background-image: linear-gradient(rgba(128, 128, 128, 0.8), #000000), url("image/6x6hXdt.jpg");
-  background: #28B2CB url(image/6x6hXdt.jpg) center center no-repeat;
+  background-image: linear-gradient(rgba(128, 128, 128, 0.8), #000000), url("/image/6x6hXdt.jpg");
+  background: #28B2CB url(/image/6x6hXdt.jpg) center center no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
