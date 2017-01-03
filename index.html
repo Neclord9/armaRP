@@ -1,29 +1,104 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>CSS3 Animated buttons</title>
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="ModTools" content="">
+    <meta name="Neclord" content="">
 
-  
-      <link rel="stylesheet" href="css/style.css">
+    <title>Sloth World Order</title>
 
-  
+    <!-- Bootstrap core CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
-  <div class="wrapper">
-<canvas id='canv'></canvas>
-  <p class="holder">
-    <a href="http://logs.saltlord.tech/panel" class="animBtn themeA">GetRelyBot</a>
-    <a href="http://logs.saltlord.tech:8080" class="animBtn themeB">Logviewer</a>
-    <a href="#" class="animBtn themeC">Coming....</a>
-    <a href="#" class="animBtn themeD">...Soon</a>
-  </p>
+
+<div class="site-wrapper video-background">
+    <!--
+    Video from YouTube
+    Have Questions? How To:
+    https://github.com/pupunzi/jquery.mb.YTPlayer/wiki
+    -->
+    <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=ctutKTrf_NY', containment:'body', autoPlay:true, mute:true, startAt:2, stopAt: 123, quality:'small', opacity:1, }"></a>
+
+    <div class="overlay"></div>
+
+    <div class="site-wrapper-inner">
+
+            <div class="masthead clearfix">
+                <div class="inner">
+                    <h3 class="masthead-brand"><img src="img/OSsloth.png" height="76" width="76"></h3>
+                    <nav>
+                        <ul class="nav masthead-nav">
+                            <li><a href="https://www.twitch.tv/itskoil"><i class="fa fa-twitch fa-fw"></i></a></li>
+                            <li><a href="https://discord.gg/011ooZgr25OyAZEx8"><img src="img/Discord-Logo-White.svg" height="46" width="46"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="cover-container">
+            <div class="inner cover">
+                <h1 class="cover-heading"> <i class="fa fa-bomb fa-fw"></i> Mod Tools</h1>
+                <p class="lead"></p>
+                <div id="clock"></div>
+                <p class="lead"><a href="http://logs.saltlord.tech:25005/panel" class="btn btn-lg btn-default">GetRelyBot</a></p> 
+                <a><a href="http://logs.saltlord.tech:8080/"class="btn btn-lg btn-default">Logviewer</a>
+            </div>
+
+            <div class="mastfoot">
+                <div class="inner">
+                    <p>Copyright &copy; <a href="http://saltlord.tech">SlothLegion</a></p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 </div>
-  
-    <script src="js/index.js"></script>
+
+<!-- jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<!-- Plugins and Custom JavaScript -->
+<script src="js/device.min.js"></script>
+<script src="js/jquery.mb.YTPlayer.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/custom.js"></script>
+
+<!--
+Google Analitics
+Demo Purpose Only
+Change UA-XXXXXXX-X to be your site's ID
+ -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1057679-2', 'auto');
+    ga('send', 'pageview');
+</script>
 
 </body>
 </html>
